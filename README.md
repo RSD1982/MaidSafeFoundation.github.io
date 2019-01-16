@@ -1,2 +1,0 @@
-MaidSafeFoundation.github.io
-============================
