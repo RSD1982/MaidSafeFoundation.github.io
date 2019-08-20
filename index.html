@@ -1,88 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Maidsafe Foundation - Freedom for a Better World</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="layout.css" type="text/css" media="all" />
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
+<html>
+<title>MaidSafe Foundation</title>
+	<head>
+	<style>
+		html, body { height: 100%; padding-left: 10%; padding-right:10%; margin: 0; }
+		
+		html{
+			font-family:Arial, Helvetica, sans-serif;
+			background-color:rgb(204, 219, 255);
+			}
+		body{			
+			margin-left:0px;
+			}
+		body h1{
+			font-weight:normal;
+			text-align:center;
+			padding:25px;
+			background-color:rgb(79,125,244);
+			color:rgb(255,255,255);
+			margin:0px;			
+			}
+		section h4{
+			font-weight:normal;
+			font-size:1.5em;
+			}
+		section{
+			float:left;
+            width:50%;
+			}
+        section_2{
+			width:50%;
+        	}
+		section p{
+			text-align:justify;
+			}
+		ul {
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			overflow:hidden;
+			background-color:#333;
+			}
+		li {
+			float:left;
+			}
+		li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="About-Us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
-    <a href="Meet-the-Team.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Meet the Team</a>
-    <a href="learning-centre.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Learning Centre</a>
-    <a href="global-projects.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Past Projects</a>
-   <a href="custom-services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Custom Services</a>
-    <a href="get-involved.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get Involved</a>
-    <a href="contact-us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
-  </div>
+			li a:hover:not(.active) {
+			  background-color: #111;
+			}
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-  </div>
-</div>
+			.active {
+			  background-color:rgb(0, 21, 255);
+			}
+	</style>
+	</head>
+	<body>
+		<ul>
+		 
+		  <li><a href="About-Us.html">About Us</a></li>
+		  <li><a href="Meet the Team.html">Meet The Team</a></li>
+		  <li><a href="Learning Center.html">Learning Center</a></li>
+		  <li><a href="Past Projects.html">Completed Projects</a></li>
+		  <li><a href="Custom Services.html">Custom Services</a></li>
+		  <li><a href="Get Involved.html">Get Involved</a></li>
+		  <li><a href="Contact Us.html">Contact Us</a></li>
+		  <li style="float:right"><a class="active" href="index.html">Home</a></li>
+		</ul>
 
-<!-- Header -->
-<header class="w3-container w3-indigo w3-center" style="padding:35px 16px">
-  <h1 class="w3-margin w3-jumbo"><align=left>Welcome to the MaidSafe Foundation!</h1>
-  <p class="w3-xlarge"></p>
- </header>
+		<h1>Welcome to the MaidSafe Foundation!</h1>
 
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Home</h1>
-      <h5 class="w3-padding-20">We believe in freedom and facilitation for everybody to learn, to innovate and to contribute their unique talents to make our world a better place.</h5>
+		<section>
+			<h4>Home</h4>
 
-      <p class="w3-text-grey">We will develop free education where people can learn about the things that genuinely excite them at any stage in life.</p>
-      <p class="w3-text-grey">We will help people set up a new business, social enterprise or any initiative they feel passionate about.</p>
-      <p class="w3-text-grey">The MaidSafe Foundation will seek to collaborate with others to develop projects for a fairer and more balanced world.</p>
-    </div>
+			<p>We believe in freedom and facilitation for everybody to learn, to innovate and to contribute their unique talents to make our world a better place.</p>
 
-    <div class="w3-third w3-center">
-     <img src="Images\images\new ideas.png" alt="New Ideas" style="width:600px;height:384px;">
-    </div>
-  </div>
-</div>
+			<p>We will develop free education where people can learn about the things that genuinely excite them at any stage in life.</p>
 
-</div>
+			<p>We will help people set up a new business, social enterprise or any initiative they feel passionate about.</p>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    
- </div>
- <p>©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032</p>
-</footer>
+			<p>The MaidSafe Foundation will seek to collaborate with others to develop projects for a fairer and more balanced world.
+			</p>
+		</section>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-</body>
+		<section_2>
+			<center><img src="Images\new ideas.png" style="width:20vw;"><center>
+		</section_2>
+		<footer style="text-align:center; margin-top:25px;">
+			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
+		</footer>
+	</body>
 </html>
