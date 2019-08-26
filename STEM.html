@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<title>STEM Support</title>
+	<head>
+		<style>
+		html, body { 
+			height: 100%; 
+			padding-left: 10%; 
+			padding-right:10%; 
+			margin: 0; 
+			}
+		
+		html{
+			font-family:Arial, Helvetica, sans-serif;
+			background-color:rgb(204, 219, 255);
+			}
+		body{
+			margin-left:0px;
+			}
+		h1 {
+			font-weight:normal;
+			text-align:center;
+			padding:25px;
+			background-color:rgb(79,125,244);
+			color:rgb(255,255,255);
+			margin:0px;
+			}	
+		h4 {
+			font-weight:normal;
+			text-align:center;
+			font-size:1.5em;
+			}
+		img {
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+			width:10%;
+			}
+		h2 {
+			font-weight:normal;
+			text-align:center;
+			}		
+		h3 {
+			text-align:center;
+			color:red;
+			}
+		#passWord(){
+			-webkit-text-security: disc;
+			-moz-text-security:circle;
+			text-security:circle;
+			}
+		ul {
+			list-style-type:none;
+			margin: 0;
+			padding: 0;
+			overflow:hidden;
+			background-color:#333;
+			}
+		li {
+			float:left;
+			}
+		li a {
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+		li a:hover:not(.active) {
+			  background-color: #111;
+			}
+
+		.active {
+			  background-color:rgb(0, 21, 255);
+			}
+		</style>
+
+	<head>
+	
+	<body>
+		<ul> 
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About-Us.html">About Us</a></li>
+			<li><a href="Meet the Team.html">Meet The Team</a></li>
+			<li><a href="Learning Center.html">Learning Center</a></li>
+			<li><a href="Past Projects.html">Completed Projects</a></li>
+			<li><a href="Custom Services.html">Custom Services</a></li>
+			<li><a href="Get Involved.html">Get Involved</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li style="float:right"><a class="active" href="STEM.html">Stem Support</a></li>
+		</ul>
+	
+	
+	<h1>Welcome to the STEM Pack Support Page<h1>
+	<h2>This area is for use only by schools who have purchased the MaidSafe STEM Pack</h4>
+	<h4>Please click below to download any required documents.</h4>
+	<h3>Please ensure that any pop-up blockers are switched off or paused!</h3>
+	<img src="Images\download.jpg"></img>
+	
+	<SCRIPT>
+		function passWord() {
+		var testV = 1;
+		var pass1 = prompt('Please Enter Your Password',' ');
+		while (testV < 3) {
+		if (!pass1) 
+		history.go(-1);
+		if (pass1.toLowerCase() == "invaders") {
+		alert('Click to Continue');
+		window.open('Space Invaders Tutorial.zip');
+		break;
+		} 
+		testV+=1;
+		var pass1 = 
+		prompt('Password Incorrect, Please Try Again.','Password');
+		}
+		if (pass1.toLowerCase()!="password" & testV ==3) 
+		history.go(-1);
+		return " ";
+		} 
+		</SCRIPT>
+		<CENTER>
+		<FORM>
+		<input type="button" value="Space Invaders Tutorial" onClick="passWord();">
+		</FORM>
+		</CENTER>
+
+	</body>
+	
+	<footer>
+	</footer>
+</html>
