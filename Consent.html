@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
-<title>About Us</title>
+<title>Past Projects</title>
 	<head>
 	<style>
 		html, body { height: 100%; padding-left: 10%; padding-right:10%; margin: 0; }
+
 		html{
-		font-family:Arial, Helvetica, sans-serif;
-		background-color:rgb(204, 219, 255);
-		}
+			font-family:Arial, Helvetica, sans-serif;
+			background-color:rgb(204, 219, 255);
+			}
+			
+		#div1 { 
+			background:rgb (204,219,255);
+			float:left;
+			}
+		
+		#div2 { 
+			background:rgb (204,219,255); 
+			float=left;
+			margin=auto;
+			}
+			
 		body{
 			margin-left:0px;
 			}
@@ -18,25 +31,39 @@
 			background-color:rgb(79,125,244);
 			color:rgb(255,255,255);
 			margin:0px;
-			
 			}
-		section h4{
+		h4{
 			font-weight:normal;
 			font-size:1.5em;
-		}
-		section{
-			float:left;
-            width:50%;
-			text-align:justify;
 			}
-        section_2{
-            width:50;
-        	}
-		section p{
-			text-align:justified;
+		div p{
+			text-align:justify;
 			line-height:1.4;
 			}
-			
+		* {
+			box-sizing: border-box;
+			}
+
+		.column {
+			float: left;
+			width: 25%;
+			padding: 2%;
+			}
+		.column2 {
+			float: left;
+			width: 20%;
+			padding: 2%;
+			}
+		.column3 {
+			float: left;
+			width: 33%;
+			padding: 2%;
+			}
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+			}
 		/* background color for top navigation */
 		.topnav {
 		  background-color: #333;
@@ -152,13 +179,15 @@
 			text-align: left;
 		  }
 		}
-				
+			
+		
+			
 	</style>
 	</head>
 	<body>
 		<div class="topnav" id="myTopnav">
 		<a href="index.html">Home</a>
-		<a href="About-Us.html" class="active">About Us</a>
+		<a href="About-Us.html">About Us</a>
 		<a href="Meet the Team.html">Meet the Team</a>
 		<a href="Learning Center.html">Learning Center</a>		
 		<div class="dropdown">
@@ -183,39 +212,32 @@
 		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</div>
 
+		<h1>Completed Projects</h1>
+		<div class="row">
+			<div id="div1" style="width:45%; float:left;">
+				<h4>Girvan Academy and Ayrshire Women's Hub</h4>
+			</div>
+		</div>
 
-		<script>
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-		function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-			x.className += " responsive";
-		  } else {
-			x.className = "topnav";
-		  }
-		}
-		</script>
-
-		<h1>About Us</h1>
-
-		<section>
-		<h4>Established at the start of 2011, Maidsafe Foundation is a registered Scottish Charity: SC042032.</h4>
-
-		<p>We aim to support learners of all ages to develop their knowledge, skills and abilities in a variety of subjects.</p>
-
-		<p>We will work with schools, universities, innovators, artists, businesses but especially those around the globe who could use a helping hand. In the UK we will have a special focus on helping to create opportunities for young and disadvantaged people, enabling them to actively use their talents and potential to benefit their communities and society.</p>
-
-		<p>We will help people set up a new business, social enterprise or any initiative they feel passionate about.</p>
-
-		<p>The MaidSafe Foundation will seek to collaborate with others to develop projects for a fairer and more balanced world.</p>
-		</section>
-
-		<section_2>
-		<center><img src="Images\new ideas.png" style="width:20vw;"><center>
-		</section_2>
+		<div class="row">
+				<div class="column3">
+					<img src="Images\update\100.png" alt="Girvan Academy" style="width:100%">
+				</div>
+				<div class="column3">
+					<a href="Images\update\100.jpg" target="_blank"><img src="Images\update\100.jpg" alt="Girvan Academy" style="width:100%">
+				</div></a>
+				<div class="column3">
+					<a href="https://www.facebook.com/ayrshirewomenshub/" target="_blank"><img src="Images\update\101.jpg" alt="Girvan Academy" style="width:100%">
+				</div></a>
+		</div>	
 		
-		<footer style="text-align:center; margin-top:25px; padding:10%;">
+		<hr>
+		
+		
+		<footer style="text-align:center; margin-top:25px;">
 			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
+
+
 	</body>
 </html>
