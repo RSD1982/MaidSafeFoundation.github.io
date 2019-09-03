@@ -64,45 +64,153 @@
 			clear: both;
 			display: table;
 			}
-		ul {
-			list-style-type:none;
-			margin: 0;
-			padding: 0;
-			overflow:hidden;
-			background-color:#333;
-			}
-		li {
-			float:left;
-			}
-		li a {
-			  display: block;
-			  color: white;
-			  text-align: center;
-			  padding: 14px 16px;
-			  text-decoration: none;
-			}
-		li a:hover:not(.active) {
-			  background-color: #111;
-			}
+		/* background color for top navigation */
+		.topnav {
+		  background-color: #333;
+		  overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		/* Add an active class to highlight the current page */
 		.active {
-			  background-color:rgb(0, 21, 255);
-				}	
+		  background-color: rgb(0, 21, 255);
+		  color: white;
+		}
+
+		/* Hide the link that should open and close the topnav on small screens */
+		.topnav .icon {
+		  display: none;
+		}
+
+		/* Dropdown container - needed to position the dropdown content */
+		.dropdown {
+		  float: left;
+		  overflow: hidden;
+		}
+
+		/* Style the dropdown button to fit inside the topnav */
+		.dropdown .dropbtn {
+		  font-size: 17px; 
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		/* Style the dropdown content (hidden by default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Style the links inside the dropdown */
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		/* Add a dark background on topnav links and the dropdown button on hover */
+		.topnav a:hover, .dropdown:hover .dropbtn {
+		  background-color: #555;
+		  color: white;
+		}
+
+		/* Add a grey background to dropdown links on hover */
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+
+		/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+		@media screen and (max-width: 600px) {
+		  .topnav a:not(:first-child), .dropdown .dropbtn {
+			display: none;
+		  }
+		  .topnav a.icon {
+			float: right;
+			display: block;
+		  }
+		}
+
+		/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+		@media screen and (max-width: 600px) {
+		  .topnav.responsive {position: relative;}
+		  .topnav.responsive a.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		  }
+		  .topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+		  }
+		  .topnav.responsive .dropdown {float: none;}
+		  .topnav.responsive .dropdown-content {position: relative;}
+		  .topnav.responsive .dropdown .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: left;
+		  }
+		}
+			
 		
 			
 	</style>
 	</head>
 	<body>
-		<ul> 
-			<li><a href="index.html">Home</a></li>
-		  <li><a href="About-Us.html">About Us</a></li>
-		  <li><a href="Meet the Team.html">Meet The Team</a></li>
-		  <li><a href="Learning Center.html">Learning Center</a></li>
-		  <li><a href="Custom Services.html">Custom Services</a></li>
-		  <li><a href="Get Involved.html">Get Involved</a></li>
-		  <li><a href="STEM.html">STEM Support</a></li>
-		  <li><a href="Contact Us.html">Contact Us</a></li>
-		  <li style="float:right"><a class="active" href="Past Projects.html">Completed Projects</a></li>
-		</ul>
+		<div class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a href="About-Us.html">About Us</a>
+		<a href="Meet the Team.html">Meet the Team</a>
+		<a href="Learning Center.html">Learning Center</a>		
+		<div class="dropdown">
+			<button class="dropbtn">Completed Projects 
+				<i class="fa fa-caret-down"></i>
+			</button>
+		<div class="dropdown-content">
+			<a href="Barr door.html">Door Hangings</a>
+			<a href="Catrine Poppy.html">Poppy Project</a>
+			<a href="Catrine Screens.html">Chinese Glass</a>
+			<a href="Consent.html">Consent Project</a>
+			<a href="EAC.html">Easter Holidays</a>
+			<a href="Macintosh Glass.html">Macintosh Roses</a>
+			<a href="Struthers.html">Space Projects</a>
+			<a href="tartan.html">Tartan Prints</a>
+		</div>
+		</div> 
+		  <a href="Custom Services.html">Custom Services</a>
+		  <a href="Get involved.html">Get Involved</a>
+		  <a href="STEM.html">STEM Support</a>
+		  <a href="Contact Us.html"></a>Contact Us
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
 
 		<h1>Completed Projects</h1>
 		<div class="row">
@@ -133,171 +241,7 @@
 					<a href="Images\catrine primary poppy4.JPG" target="_blank"><img src="Images\catrine primary poppy4.JPG" alt="Catrine Primary" style="width:100%"></a>
 				</div>
 		</div>
-		
-		<hr>
-		
-		<div class="row">
-				<div class="column2">
-					<img src="Images\update\20.png" alt="Catrine Primary" style="width:100%">
-				</div>
-				<div class="column2">
-					<a href="Images\update\34.JPG" target="_blank"><img src="Images\update\34.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\35.JPG" target="_blank"><img src="Images\update\35.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\36.JPG" target="_blank"><img src="Images\update\36.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\36(1).jpeg" target="_blank"><img src="Images\update\36(1).jpeg" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-		</div>
-		
-		<hr>
-		
-		<div class="row">
-				<div class="column3">
-					<a href="Images\update\40.JPG" target="_blank"><img src="Images\update\40.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column3">
-					<img src="Images\update\37.png" alt="Catrine Primary" style="width:100%">
-				</div>
-				<div class="column3">
-					<a href="Images\update\41.JPG" target="_blank"><img src="Images\update\41.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-		</div>
-		
-		<div class="row">
-				<div class="column3">
-					<a href="Images\update\42.JPG" target="_blank"><img src="Images\update\42.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column3">
-					<a href="Images\update\43.JPG" target="_blank"><img src="Images\update\43.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-				<div class="column3">
-					<a href="Images\update\44.JPG" target="_blank"><img src="Images\update\44.JPG" alt="Catrine Primary" style="width:100%"></a>
-				</div>
-		</div>	
-
-		<hr>
-		
-		<div class="row">
-				<div class="column2">
-					<img src="Images\update\45.png" alt="Ochiltree Primary" style="width:100%">
-				</div>
-				<div class="column2">
-					<a href="Images\update\46.jpg" target="_blank"><img src="Images\update\46.jpg" alt="Ochiltree Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\49.jpg" target="_blank"><img src="Images\update\49.jpg" alt="Ochiltree Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\51.jpg" target="_blank"><img src="Images\update\51.jpg" alt="Ochiltree Primary" style="width:100%"></a>
-				</div>
-				<div class="column2">
-					<a href="Images\update\52.jpg" target="_blank"><img src="Images\update\52.jpg" alt="Ochiltree Primary" style="width:100%"></a>
-				</div>
-		</div>	
-		
-		<hr>
-
-		<div class="row">
-				<div class="column">
-					<img src="Images\update\61.png" alt="Struthers Primary" style="width:100%">
-				</div>
-				<div class="column">
-					<a href="Images\update\621.JPG" target="_blank"><img src="Images\update\621.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\631.JPG" target="_blank"><img src="Images\update\631.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\641.JPG" target="_blank"><img src="Images\update\641.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-		</div>
-		
-		<hr>
-
-		<div class="row">
-				<div class="column">
-					<a href="Images\update\651.JPG" target="_blank"><img src="Images\update\651.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\661.JPG" target="_blank"><img src="Images\update\661.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\671.JPG" target="_blank"><img src="Images\update\671.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\681.JPG" target="_blank"><img src="Images\update\681.JPG" alt="Struthers Primary" style="width:100%">
-				</div></a>
-		</div>		
-
-		<hr>
-		
-		<div class="row">
-				<div class="column">
-					<img src="Images\update\69.png" alt="Barr Primary" style="width:100%">
-				</div>
-				<div class="column">
-					<a href="Images\update\74.jpg" target="_blank"><img src="Images\update\74.jpg" alt="Barr Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\82.jpg" target="_blank"><img src="Images\update\82.jpg" alt="Barr Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\84.JPG" target="_blank"><img src="Images\update\84.JPG" alt="Barr Primary" style="width:100%">
-				</div></a>
-		</div>	
-		
-		<div class="row">
-				<div class="column">
-					<a href="Images\update\77.jpg" target="_blank"><img src="Images\update\77.jpg" alt="Barr Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\80.jpg" target="_blank"><img src="Images\update\80.jpg" alt="Barr Primary" style="width:100%">
-				</div>
-				<div class="column">
-					<a href="Images\update\83.jpg" target="_blank"><img src="Images\update\83.jpg" alt="Barr Primary" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\85.JPG" target="_blank"><img src="Images\update\85.JPG" alt="Barr Primary" style="width:100%">
-				</div></a>
-		</div>	
-
-		<hr>
-		
-		<div class="row">
-				<div class="column">
-					<img src="Images\update\92.png" alt="EAC" style="width:100%">
-				</div>
-				<div class="column">
-					<a href="Images\update\95.jpg" target="_blank"><img src="Images\update\95.jpg" alt="EAC" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\98.jpg" target="_blank"><img src="Images\update\98.jpg" alt="EAC" style="width:100%">
-				</div></a>
-				<div class="column">
-					<a href="Images\update\99.JPG" target="_blank"><img src="Images\update\99.JPG" alt="EAC" style="width:100%">
-				</div></a>
-		</div>	
-		
-		<hr>
-
-		<div class="row">
-				<div class="column3">
-					<img src="Images\update\100.png" alt="Girvan Academy" style="width:100%">
-				</div>
-				<div class="column3">
-					<a href="Images\update\100.jpg" target="_blank"><img src="Images\update\100.jpg" alt="Girvan Academy" style="width:100%">
-				</div></a>
-				<div class="column3">
-					<a href="https://www.facebook.com/ayrshirewomenshub/" target="_blank"><img src="Images\update\101.jpg" alt="Girvan Academy" style="width:100%">
-				</div></a>
-		</div>	
-		
-		<hr>
+	<hr>
 		
 		
 		<footer style="text-align:center; margin-top:25px;">
