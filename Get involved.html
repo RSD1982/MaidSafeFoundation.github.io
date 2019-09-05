@@ -103,8 +103,8 @@
 		  display: block;
 		}
 
-		/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-		@media screen and (max-width: 600px) {
+		/* When the screen is less than 1079 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+		@media screen and (max-width: 1079px) {
 		  .topnav a:not(:first-child), .dropdown .dropbtn {
 			display: none;
 		  }
@@ -115,7 +115,7 @@
 		}
 
 		/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 1079px) {
 		  .topnav.responsive {position: relative;}
 		  .topnav.responsive a.icon {
 			position: absolute;
@@ -137,7 +137,6 @@
 		}
 		</style>
 	</head>
-
 	<body>
 		<div class="topnav" id="myTopnav">
 		<a href="index.html">Home</a>
@@ -146,7 +145,6 @@
 		<a href="Learning Center.html">Learning Center</a>		
 		<div class="dropdown">
 			<button class="dropbtn">Completed Projects 
-				<i class="fa fa-caret-down"></i>
 			</button>
 		<div class="dropdown-content">
 			<a href="Barr door.html">Door Hangings</a>
@@ -193,7 +191,11 @@
 		<section style="width:40%; float:left;">
 			<center><img src="Images\footer-logo.png" style="width:90%;"></center>
 		</section>
-		<footer style="text-align:center; margin-top:25px;">
+		
+		<br>
+		
+		<footer style="text-align:center; padding:5%;">
+			<hr>
 			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
 	</body>
