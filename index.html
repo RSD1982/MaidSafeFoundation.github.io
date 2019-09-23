@@ -2,12 +2,21 @@
 <html>
 <title>MaidSafe Foundation</title>
 	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+		* 	{
+			box-sizing: border-box;
+			}
 		html, body { height: 100%; padding-left: 10%; padding-right:10%; margin: 0; }
 		
 		html{
 			font-family:Arial, Helvetica, sans-serif;
 			background-color:rgb(204, 219, 255);
+			}
+		[class*="col-"] {
+			float: left;
+			padding: 15px;
+			align:middle;
 			}
 		body{			
 			margin-left:0px;
@@ -24,16 +33,19 @@
 			font-weight:normal;
 			font-size:1.5em;
 			}
-		section{
+		.col-1{
 			float:left;
             width:50%;
 			}
-        section_2{
-			width:50%;
-        	}
-		section p{
+		.col-2{
+			float:left;
+			max-width:50%;
+			}
+		p{
 			text-align:justify;
 			}
+/* Navigation Bar*/
+
 		/* background color for top navigation */
 		.topnav {
 		  background-color: #333;
@@ -148,7 +160,13 @@
 			width: 100%;
 			text-align: left;
 		  }
-		}
+/* End of Nav Bar */		  
+		
+		@media only screen and (max-width: 1079px) {
+			[class*="col-"] 
+			{width: 100%;}
+			}
+	
 	</style>
 	</head>
 	<body>
@@ -194,7 +212,7 @@
 		<div class="row">
 			<h1>Welcome to the MaidSafe Foundation!</h1>
 
-			<section>
+			<div class="col-1">
 				<h4>Home</h4>
 
 				<p>We believe in freedom and facilitation for everybody to learn, to innovate and to contribute their unique talents to make our world a better place.</p>
@@ -205,13 +223,16 @@
 
 				<p>The MaidSafe Foundation will seek to collaborate with others to develop projects for a fairer and more balanced world.
 				</p>
-			</section>
+			</div>
+			
 
-			<section_2>
-				<center><img src="Images\new ideas.png" style="width:20vw;"><center>
-			</section_2>
+			<div class="col-2">
+				<img src="Images\new ideas.png" style="width:100%; padding:5px;">
+			</div>
 		</div>
+		<p style="clear:both;">
 		<hr>
+		
 		<footer style="text-align:center; margin-top:25px;">
 			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
