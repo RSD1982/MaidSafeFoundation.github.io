@@ -2,6 +2,9 @@
 <html>
 <title>STEM Support</title>
 	<head>
+		<link rel="icon" 
+      type="image/png" 
+      href="Images\favicon.png">
 		<style>
 		html, body { 
 			height: 100%; 
@@ -164,6 +167,16 @@
 			text-align: left;
 		  }
 		}
+		label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+}
+
 			
 		</style>
 
@@ -174,17 +187,17 @@
 		<a href="index.html">Home</a>
 		<a href="About-Us.html">About Us</a>
 		<a href="Meet the Team.html">Meet the Team</a>
-		<a href="Learning Center.html">Learning Center</a>		
+		<a href="Learning Center.html">Learning Centre</a>		
 		<div class="dropdown">
 			<button class="dropbtn">Completed Projects
 			</button>
 		<div class="dropdown-content">
 			<a href="Barr door.html">Door Hangings</a>
 			<a href="Catrine Poppy.html">Poppy Project</a>
-			<a href="Catrine Screens.html">Chinese Glass</a>
+			<a href="Catrine Screens.html">Chinese Screens</a>
 			<a href="Consent.html">Consent Project</a>
 			<a href="EAC.html">Easter Holidays</a>
-			<a href="Macintosh Glass.html">Macintosh Roses</a>
+			<a href="Macintosh Glass.html">Mackintosh Roses</a>
 			<a href="Struthers.html">Space Projects</a>
 			<a href="tartan.html">Tartan Prints</a>
 		</div>
@@ -213,36 +226,35 @@
 	
 	<h1>Welcome to the STEM Pack Support Page<h1>
 	<h2>This area is for use only by schools who have purchased the MaidSafe STEM Pack</h4>
-	<h4>Please click below to download any required documents.</h4>
+	<h2>You will find your username and password in the MaidSafe STEM Pack
 	<h3>Please ensure that any pop-up blockers are switched off or paused!</h3>
-	<img src="Images\download.jpg"></img>
+	<center>	
+	<form name="login">
+	<p>Username  <input type="text" name="userid"/></p>
+	<p>Password  <input type="password" name="pswrd"/></p>
+	<input type="button" onclick="check(this.form)" value="Login"/>
+	<input type="reset" value="Cancel"/>
+	</form></center>
+	<script language="javascript">
+	function check(form)
+	{
+
+	 if(form.userid.value == "Richard" && form.pswrd.value == "login")
 	
-	<SCRIPT>
-		function passWord() {
-		var testV = 1;
-		var pass1 = prompt('Please Enter Your Password',' ');
-		while (testV < 3) {
-		if (!pass1) 
-		history.go(-1);
-		if (pass1.toLowerCase() == "invaders") {
-		alert('Click to Continue');
-		window.open('Space Invaders Tutorial.zip');
-		break;
-		} 
-		testV+=1;
-		var pass1 = 
-		prompt('Password Incorrect, Please Try Again.','Password');
-		}
-		if (pass1.toLowerCase()!="password" & testV ==3) 
-		history.go(-1);
-		return " ";
-		} 
-		</SCRIPT>
-		<CENTER>
-		<FORM>
-		<input type="button" value="Space Invaders Tutorial" onClick="passWord();">
-		</FORM>
-		</CENTER>
+	  {
+		window.open('index.html')
+	  }
+	 else
+	 {
+	   alert("Error Password or Username")
+	  }
+	}
+	</script>
+	
+	
+
+
+
 
 	</body>
 	<hr>
