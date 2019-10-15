@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<title>Resources</title>
+	<head>
+		<link rel="icon" 
+      type="image/png" 
+      href="Images\favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* 	{
+			box-sizing: border-box;
+			}
+		html, body { height: 100%; padding-left: 10%; padding-right:10%; margin: 0; }
+		
+		html{
+			font-family:Arial, Helvetica, sans-serif;
+			background-color:rgb(204, 219, 255);
+			}
+		img.center {
+			display: block;
+			margin:auto;
+			}
+		[class*="col-"] {
+			float:left;			
+			}
+		body{			
+			margin-left:0px;
+			}
+		h1{
+			font-weight:normal;
+			text-align:center;
+			padding:25px;
+			background-color:rgb(79,125,244);
+			color:rgb(255,255,255);
+			margin:0px;			
+			}
+		h2{
+			font-weight:normal;
+			text-align:center;
+			padding:10px;
+			background-color:rgb(79,125,244);
+			color:rgb(255,255,255);
+			margin:25px;			
+			}	
+		body h9{
+			font-weight:normal;
+			text-align:center;
+			padding:25px;
+			background-color:rgb(181, 179, 174);
+			color:rgb(255,255,255);
+			margin:0px;			
+			}
+		section h4{
+			font-weight:normal;
+			font-size:1.5em;
+			}
+		p{
+			text-align:justify;
+			}
+		p1{
+			text-align:justify;
+			font-weight:bold;
+			color:red;
+			}
+
+		.col-1{
+			float:left;
+            width:25%;
+			}
+		.col-2{
+			float:left;
+			width:100%;
+			}
+		
+			
+/* Navigation Bar*/
+
+		/* background color for top navigation */
+		.topnav {
+		  background-color: #333;
+		  overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		/* Add an active class to highlight the current page */
+		.active {
+		  background-color: rgb(0, 21, 255);
+		  color: white;
+		}
+
+		/* Hide the link that should open and close the topnav on small screens */
+		.topnav .icon {
+		  display: none;
+		}
+
+		/* Dropdown container - needed to position the dropdown content */
+		.dropdown {
+		  float: left;
+		  overflow: hidden;
+		}
+
+		/* Style the dropdown button to fit inside the topnav */
+		.dropdown .dropbtn {
+		  font-size: 17px; 
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 14px 16px;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
+
+		/* Style the dropdown content (hidden by default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Style the links inside the dropdown */
+		.dropdown-content a {
+		  float: none;
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+
+		/* Add a dark background on topnav links and the dropdown button on hover */
+		.topnav a:hover, .dropdown:hover .dropbtn {
+		  background-color: #555;
+		  color: white;
+		}
+
+		/* Add a grey background to dropdown links on hover */
+		.dropdown-content a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+
+		/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+
+		/* When the screen is less than 1079 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+		@media screen and (max-width: 1079px) {
+		  .topnav a:not(:first-child), .dropdown .dropbtn {
+			display: none;
+		  }
+		  .topnav a.icon {
+			float: right;
+			display: block;
+		  }
+		}
+
+		/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+		@media screen and (max-width: 1079px) {
+		  .topnav.responsive {position: relative;}
+		  .topnav.responsive a.icon {
+			position: absolute;
+			right: 0;
+			top: 0;
+		  }
+		  .topnav.responsive a {
+			float: none;
+			display: block;
+			text-align: left;
+		  }
+		  .topnav.responsive .dropdown {float: none;}
+		  .topnav.responsive .dropdown-content {position: relative;}
+		  .topnav.responsive .dropdown .dropbtn {
+			display: block;
+			width: 100%;
+			text-align: left;
+		  }
+/* End of Nav Bar */		  
+		
+		@media only screen and (max-width: 1079px) {
+			[class*="col-"] 
+			{width: 100%;}
+			}
+	
+	</style>
+	</head>
+	<body>
+				<div class="topnav" id="myTopnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="About-Us.html">About Us</a>
+		<a href="Meet the Team.html">Meet the Team</a>
+		<a href="Learning Center.html">Learning Centre</a>		
+		<div class="dropdown">
+			<button class="dropbtn">Completed Projects
+			</button>
+		<div class="dropdown-content">
+			<a href="Barr door.html">Door Hangings</a>
+			<a href="Catrine Poppy.html">Poppy Project</a>
+			<a href="Catrine Screens.html">Chinese Screens</a>
+			<a href="Consent.html">Consent Project</a>
+			<a href="EAC.html">Easter Holidays</a>
+			<a href="Macintosh Glass.html">Mackintosh Roses</a>
+			<a href="Struthers.html">Space Projects</a>
+			<a href="tartan.html">Tartan Prints</a>
+		</div>
+		</div> 
+		  <a href="Custom Services.html">Custom Services</a>
+		  <a href="Get involved.html">Get Involved</a>
+		  <a href="STEM.html">STEM Support</a>
+		  <a href="Contact Us.html">Contact Us</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+
+
+		<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+		</script>
+		
+		<div class="row">
+			<h1>Welcome to the STEM Education Pack Resource Page</h1>
+			<center><h4>Please find below all of the printable resources required, sorted by level and lesson number.</h4></center>
+		<hr>	
+		
+
+		<div class="col-2">
+		<center><a href="Docs\ResourcesNumbered.pdf"><img src="Images\pdflogo.png" style="width:10%";></a></center>
+				<p><center>Resource Guide</center></p>
+				<p1><center>Print Double sided, selecting "flip on short edge".</center></p1>
+		</div>
+		
+<p style="clear:both;">
+				
+	
+			<h2 align="center">Early Level</h2>
+
+				
+				<div class="col-1">
+				<a href="Docs\ES01.docx" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S01 - Electricity - Keeping Safe</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\ES02 Gravity.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S02 - Forces - Gravity and Friction</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\ES01.docx" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S05 - Materials - Float or Sink</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\ES01.docx" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S06 - Biodiversity and Interdependence - Plants</center></p>
+				</div>
+				
+		<div class="row">
+				<div class="col-1">
+				<a href="Docs\Early Internet Safety.ppsx" target="_blank";><center><img src="Images\powerpoint.png" style="width:25%";></center></a>
+				<p><center>T03 - Internet Safety</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\EM01 Measure.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>M01 - Measure - Non-Standard Units</center></p>
+				</div>
+				
+				
+			<p style="clear:both;">
+			
+			<h2 align="center">First Level</h2>
+			
+			<div class="row">
+				<div class="col-1">
+				<a href="Docs\1S03 Hydraulics.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S03 - Hydraulics - Piston Bore</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\1S03 Hydraulics Extension.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S03 - Hydraulics Extension - Difficult</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\1S04 Hydraulics V Pneumatics.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S04 - Forces - Hydraulics Vs Pneumatics</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\1S06 Materials.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S06 - Materials - Properties</center></p>
+				</div>		
+
+			<div class="row">
+				<div class="col-1">
+				<a href="Docs\1S06 Material Challenge.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S06 Materials Challenge</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\1S09 Space Months.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S09 - Space - Months</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\1S10 Years and Seasons.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S10 - Space - Years and Seasons</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\Scratch Cards.zip" target="_blank";><center><img src="Images\winzip.png" style="width:25%";></center></a>
+				<p><center>T01 - Computer Science - Coding</center></p>
+				</div>
+
+				<div class="col-1">
+				<a href="Docs\1M01 Measure.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>M01 - Measure - Estimation and Standard Units</center></p>
+				</div>				
+			
+			</div>
+			
+			<p style="clear:both;">
+			
+			<h2 align="center">Second Level</h2>
+			
+			<div class="row">
+					<div class="col-1">
+				<a href="Docs\2S01 pH.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S01 - Chemical Changes - pH Indicator</center></p>
+				</div>
+
+				<div class="col-1">
+				<a href="Docs\2S03 Electricity.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S03 - Electricity Extension</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\ES01.docx" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>S05 - Forces - Friction</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\Space Invaders Tutorial.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>T01 - Coding - Space Invaders Tutorial</center></p>
+				</div>
+				
+	<p style="clear:both;">			
+				<div class="col-1">
+				<a href="Docs\2T02 Parts of a Computer.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>T02 - Computing Science - Parts of a Computer</center></p>
+				</div>
+		
+				<div class="col-1">
+				<a href="Docs\2E01 Marble Run.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>E01 - Engineering - Marble Run</center></p>
+				</div>	
+						
+				<div class="col-1">
+				<a href="Docs\2M01 Bridge Design.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>M01 - Problem Solving - Bridge Design</center></p>
+				</div>
+				
+				<div class="col-1">
+				<a href="Docs\2M02 Measure.pdf" target="_blank";><center><img src="Images\pdflogo.png" style="width:25%";></center></a>
+				<p><center>M02 - Measure - Converting Between Units</center></p>
+				</div>	
+				
+			</div>
+			
+			
+
+			
+				
+			
+		</div>
+		<p style="clear:both;">
+		<hr>
+		
+		<footer style="text-align:center; margin-top:25px;">
+			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
+		</footer>
+	</body>
+</html>
