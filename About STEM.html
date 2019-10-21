@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html>
-<title>MaidSafe Foundation</title>
+<title>About STEM</title>
 	<head>
 		<link rel="icon" 
       type="image/png" 
       href="Images\favicon.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		* 	{
-			box-sizing: border-box;
-			}
-		html, body { height: 100%; padding-left: 2%; padding-right:2%; margin: 0; }
-		
+		html, body { 
+		height: 100%; 
+		padding-left:2%; 
+		padding-right:2%; 
+		margin:auto; 
+		}
 		html{
-			font-family:Arial, Helvetica, sans-serif;
-			background-color:rgb(204, 219, 255);
-			}
-		img.center {
-			display: block;
-			margin:auto;
-			}
-		[class*="col-"] {
-			float:left;			
-			}
-		body{			
+		font-family:Arial, Helvetica, sans-serif;
+		background-color:rgb(204, 219, 255);
+		}
+		body{
 			margin-left:0px;
 			}
 		body h1{
@@ -32,25 +25,35 @@
 			padding:25px;
 			background-color:rgb(79,125,244);
 			color:rgb(255,255,255);
-			margin:0px;			
+			margin:0px;
+			
 			}
 		section h4{
 			font-weight:normal;
 			font-size:1.5em;
-			}
-		.col-1{
+		}
+		section{
+			border:1px solid black;
 			float:left;
-            width:50%;
-			}
-		.col-2{
-			float:left;
-			width:50%;
-			}
-		p{
+            width:45%;
+			margin:0.5%;			
 			text-align:justify;
+			padding:1.5%;
+			min-height:70%;
+			
+			
 			}
-/* Navigation Bar*/
-
+        section_2{
+			float:left;
+            width:50;
+			margin-top:10px;
+        	}
+		section p{
+			text-align:justified;
+			line-height:1.4;
+			}
+		
+			
 		/* background color for top navigation */
 		.topnav {
 		  background-color: #333;
@@ -165,21 +168,16 @@
 			width: 100%;
 			text-align: left;
 		  }
-/* End of Nav Bar */		  
-		
-		@media only screen and (max-width: 1079px) {
-			[class*="col-"] 
-			{width: 100%;}
-			}
-	
+		}
+				
 	</style>
 	</head>
 	<body>
-				<div class="topnav" id="myTopnav">
-		<a href="index.html" class="active">Home</a>
-		<a href="About-Us.html">About Us</a>
+		<div class="topnav" id="myTopnav">
+		<a href="index.html">Home</a>
+		<a href="About-Us.html" class="active">About Us</a>
 		<a href="Meet the Team.html">Meet the Team</a>
-		<a href="Learning Center.html">Learning Centre</a>		
+		<a href="Learning Center.html">Learning Center</a>		
 		<div class="dropdown">
 			<button class="dropbtn">Completed Projects
 			</button>
@@ -213,33 +211,41 @@
 		  }
 		}
 		</script>
+
+		<h1>About Our STEM Pack</h1>
+
+		<section>
+			<h4>Any profits made from the sale of the MaidSafe STEM Pack will be reinvested into the charity, to allow us to continue our work in the community.</h4>
+
+			<p>We aim to support learners of all ages to develop their knowledge, skills and abilities in a variety of subjects. To this end we have created the MaidSafe STEM Education Pack.</p>
+
+			<p>The pack contains 47 detailed lessons covering Early, First and Second Level of Curriculum for Excellence.</p>
 		
-		<div class="row">
-			<h1>Welcome to the MaidSafe Foundation!</h1>
+			<p>Each lesson is broken down into 
+				<ul>
+					<li>What's Happening? - a summary of the lesson activity.</li>
+					<li>Experiences and Outcomes and Related Benchmarks</li>
+					<li>Pupils Will Learn</li>
+					<li>Resources Required</li>
+					<li>Introduction</li>
+					<li>Development</li>
+					<li>Plenary</li>
+					<li>Assessment</li>
+					<li>Differentiation</li>
+					<li>Useful Questions</li>
+					<li>Why Teach This?</li>
+				</ul> 
+			</p>
+		</section>
 
-			<div class="col-1">
-				<h4>Home</h4>
-
-				<p>We believe in freedom and facilitation for everybody to learn, to innovate and to contribute their unique talents to make our world a better place.</p>
-
-				<p>We will develop free education where people can learn about the things that genuinely excite them at any stage in life.</p>
-
-				<p>We will help people set up a new business, social enterprise or any initiative they feel passionate about.</p>
-
-				<p>The MaidSafe Foundation will seek to collaborate with others to develop projects for a fairer and more balanced world.
-				</p>
-			</div>
-			
-
-			<div class="col-2">
-				<img class="center" src="Images\new ideas.png" style="width:90%; padding:5px;">
-			</div>
-		</div>
-		<p style="clear:both;">
-		<hr>
+		<section>
+			<center><img src="Images\Front Page.jpg" style="width:20vw; padding:5%; margin:auto;"><center>
+		</section>
 		
-		<footer style="text-align:center; margin-top:25px;">
-			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
+				
+	
+		<footer style="text-align:center;">
+				©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
 	</body>
 </html>
