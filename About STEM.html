@@ -15,6 +15,7 @@
 		html{
 		font-family:Arial, Helvetica, sans-serif;
 		background-color:rgb(204, 219, 255);
+		line-height:1.4;
 		}
 		body{
 			margin-left:0px;
@@ -26,32 +27,42 @@
 			background-color:rgb(79,125,244);
 			color:rgb(255,255,255);
 			margin:0px;
-			
 			}
-		section h4{
-			font-weight:normal;
-			font-size:1.5em;
-		}
 		section{
-			border:1px solid black;
+			padding-top:2%;
 			float:left;
-            width:45%;
-			margin:0.5%;			
-			text-align:justify;
-			padding:1.5%;
-			min-height:70%;
-			
-			
+            width:100%;
+						}
+		section_1{
+			float:left;
+			width:50%;
+			text-align:left;
 			}
-        section_2{
-			float:left;
-            width:50;
-			margin-top:10px;
-        	}
-		section p{
-			text-align:justified;
+		
+       	section p{
+			text-align:center;
 			line-height:1.4;
 			}
+
+		.column {
+			width:24%;
+			float:left;
+			align:center;
+			padding:0.5%;
+			}
+		
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			}
+			
+		p{
+			text-align:center;
+			line-height:1.4;
+			}
+		
 		
 			
 		/* background color for top navigation */
@@ -94,7 +105,7 @@
 		  border: none;
 		  outline: none;
 		  color: white;
-		  padding: 14px 16px;
+		  padding: 2px 16px;
 		  background-color: inherit;
 		  font-family: inherit;
 		  margin: 0;
@@ -179,7 +190,7 @@
 		<a href="Meet the Team.html">Meet the Team</a>
 		<a href="Learning Center.html">Learning Center</a>		
 		<div class="dropdown">
-			<button class="dropbtn">Completed Projects
+				<button class="dropbtn"><a href="Past Projects.html">Completed Projects</a>
 			</button>
 		<div class="dropdown-content">
 			<a href="Barr door.html">Door Hangings</a>
@@ -212,39 +223,113 @@
 		}
 		</script>
 
-		<h1>About Our STEM Pack</h1>
-
+		<h1>About Our STEM Education Pack</h1>
 		<section>
-			<h4>Any profits made from the sale of the MaidSafe STEM Pack will be reinvested into the charity, to allow us to continue our work in the community.</h4>
-
-			<p>We aim to support learners of all ages to develop their knowledge, skills and abilities in a variety of subjects. To this end we have created the MaidSafe STEM Education Pack.</p>
-
-			<p>The pack contains 47 detailed lessons covering Early, First and Second Level of Curriculum for Excellence.</p>
-		
-			<p>Each lesson is broken down into 
-				<ul>
-					<li>What's Happening? - a summary of the lesson activity.</li>
-					<li>Experiences and Outcomes and Related Benchmarks</li>
-					<li>Pupils Will Learn</li>
-					<li>Resources Required</li>
-					<li>Introduction</li>
-					<li>Development</li>
-					<li>Plenary</li>
-					<li>Assessment</li>
-					<li>Differentiation</li>
-					<li>Useful Questions</li>
-					<li>Why Teach This?</li>
-				</ul> 
-			</p>
+			<div class="column">
+				<img src="Images/Pack Photos/Early/ES04b.JPG" style="width:100%; align:center; border:2px solid black;">
+				<p> Investigating Hydraulics and Forces</p>
+				<p>(Early Level)</p>
+			</div>
+			<div class="column">
+				<img src="Images/Pack Photos/First/1E01.JPG" style="width:100%; align:center; border:2px solid black;">
+				<p>Investigating forces by making Catapults!</p>
+				<p>(First Level)</p>
+			</div>
+			<div class="column">
+				<img src="Images/Pack Photos/First/1S02.JPG" style="width:100%; align:center; border:2px solid black;">
+				<p>Make simple Electrical Circuits</p>
+				<p>(First Level)</p>
+			</div>
+			<div class="column">
+				<img src="Images/Pack Photos/Second/2S08.JPG" style="width:100%; align:center; border:2px solid black;">
+				<p>Discover Relative Distances in Space!</p>
+				<p>(Second Level)</p>
+			</div>
 		</section>
-
-		<section>
-			<center><img src="Images\Front Page.jpg" style="width:20vw; padding:5%; margin:auto;"><center>
-		</section>
+		<hr>
 		
-				
-	
+		
+		<section_1>
+			<h3>The pack contains:</h3>
+			<ul>
+				<li>47 detailed lesson plans</li>
+				<li>Summary of Covered Outcomes</li>
+				<li>Large Resource Box</li>
+				<li>Access to online resources via our <a href="http://maidsafe.foundation/STEM.html" target="_blank">website</a>
+			</ul>
+			<h3>Each Lesson is comprised of the following sections:</h3>
+			<ul>
+				<li>What's Happening? - A summary of what pupils will do during the lesson.</li>
+				<li>Experiences and Outcomes and Related Benchmarks.</li>
+				<li>Pupils will Learn - Helpful for setting Success Criteria.</li>
+				<li>Resources Required - The majority of these come with the pack. Other items will already be in most schools.</li>
+				<li>Introduction - An idea of how to introduce the lesson.</li>
+				<li>Development - Suggestions for how to move the lesson along.</li>
+				<li>Plenary - A guide to summarising the learning.</li>
+				<li>Assessment - Opportunities to assess children identified.</li>
+				<li>Differentiation - Basic ideas to support and challenge pupils.</li>
+				<li>Useful Questions and Answers- Suggested questions to ask pupils complete with answers.</li>
+				<li>Why Teach This - Identifies links to real life.</li>
+			</ul>
+		</section_1>
+		
+		<section_1>
+			<img src="Images/Front Cover.jpg" style="width:40%;border:2px solid black;" class="center">
+		</section_1>		
+
+		<section_1>		
+			<img src="Images/Tutorial.jpg" style="width:40%;border:2px solid black;margin-top:1%;" class="center">
+			<p>Pupil Support materials are clear and easy to follow.</p>
+		</section_1>
+
+		<section_1>
+			
+			<p>All Pupil Support Materials are available via our <a href="http://maidsafe.foundation/STEM.html" target="_blank">website</a></p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>Testimonials to go here</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>This is just some of the feedback we have received during the pilot phase of the project.</p>
+		</section_1>	
+
+		<section_1>
+			<h2>Pricing:</h2>
+			<h3 class="center">The pack price is £620 plus P&P</h3>
+			<h3>Please note that we are a not-for-profit company. Every penny raised from the sale of this Education Pack will be reinvested in the MaidSafe Foundation, allowing us to continue our invaluable work with vulnerable people within the community</h3>
+			<br>
+			<h3>We work with schools and with Community Groups to provide education through active learning. If you would like to view examples of projects we have worked on in the past then click <a href="Past Projects.html">here</a>.</h3>
+			<br>
+			<p1>If you would like to order a STEM Education Pack and you have not already been contacted by a member of staff from our team then please visit the <a href="Contact Us.html">Contact Us</a> page where you will find links to email us or get in touch through social media.</p1>
+		</section_1>
+		
+		<section_1>
+			<img src="Images/STEM Support.jpg" style="width:40%;border:2px solid black; margin-top:1%;" class="center">
+			<p>All Pupil Support Materials are available via our <a href="http://maidsafe.foundation/STEM.html" target="_blank">website</a></p>
+		</section_1>	
+
 		<footer style="text-align:center;">
+		<hr>
 				©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
 	</body>
