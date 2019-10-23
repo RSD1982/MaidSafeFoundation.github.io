@@ -5,8 +5,18 @@
 		<link rel="icon" 
       type="image/png" 
       href="Images\favicon.png">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
-			html, body { height: 100%; padding-left: 2%; padding-right:2%; margin: 0; }
+			* 	{
+				box-sizing: border-box;
+				}
+			html, body { 
+				height:100%;
+				padding-left:2%;
+				padding-right:2%;
+				margin:0;
+				}
+				
 			html{
 				font-family:Arial, Helvetica, sans-serif;
 				background-color:rgb(204, 219, 255);
@@ -20,9 +30,29 @@
 				color:rgb(255,255,255);
 				margin:0px;
 				}
+			[class*="col-"] {
+				float:left;			
+				}
+			img.center {
+				display:block;
+				margin:auto;
+				}
 			section p{
 				margin:2%;
 				}
+			.col-1{
+				float:left;
+				width:45%;
+				margin-left:5%;
+				margin-top:5%;
+				}
+			.col-2{
+				float:left;
+				width:50%;
+				margin-top:1%;
+				margin-bottom:1%;
+				}	
+				
 		/* background color for top navigation */
 		.topnav {
 		  background-color: #333;
@@ -138,6 +168,11 @@
 			text-align: left;
 		  }
 		}
+				
+		@media only screen and (max-width: 1079px) {
+			[class*="col-"] 
+			{width: 100%;}
+			}
 		</style>
 	</head>
 	<body>
@@ -179,25 +214,29 @@
 		  }
 		}
 		</script>
-	
-		<h1>Get Involved!</h1>
-		<section style="width:58%; line-height:1.4; float:left; text-align:justify;">
-			<p>You can help us develop the Foundation and Fab Lab by writing a letter of support, making a donation, fundraising or sponsoring the purchase of one of the facilities in our Fab Lab.</p>
-
-			<p>Perhaps you are a retired engineer, teacher or have some other skillset which you'd like to offer? If so we would love to hear from you so please get in touch.</p>
-
-			<p>100% of all donations and funds raised will go directly to our projects and services as all of our operational and administrative overheads have already been covered by our core supporters.</p>
-
-			<p>Any help you feel you can give is hugely appreciated. If you are able to support us in any way or would like more information please get in touch.</p>
-		</section>
 		
-		<section style="width:40%; float:left;">
-			<center><img src="Images\footer-logo.png" style="width:90%; border:2px solid black;"></center>
-		</section>
+		<div class="row">
+			<h1>Get Involved!</h1>
+			
+			<div class="col-1">
+				<p>You can help us develop the Foundation and Fab Lab by writing a letter of support, making a donation, fundraising or sponsoring the purchase of one of the facilities in our Fab Lab.</p>
+
+				<p>Perhaps you are a retired engineer, teacher or have some other skillset which you'd like to offer? If so we would love to hear from you so please get in touch.</p>
+
+				<p>100% of all donations and funds raised will go directly to our projects and services as all of our operational and administrative overheads have already been covered by our core supporters.</p>
+
+				<p>Any help you feel you can give is hugely appreciated. If you are able to support us in any way or would like more information please get in touch.</p>
+			</div>
 		
+			<div class="col-2">
+				<img class="center"; src="Images\footer-logo.png"; style="width:60%; border:2px solid black; margin-top:5%">
+			</div>
+		</div>
+		
+	<p style="clear:both">
 		<br>
 		
-		<footer style="text-align:center; padding:5%;">
+		<footer style="text-align:center; margin-top:1%">
 			<hr>
 			©2019 MaidSafe Foundation. All rights reserved. Reg charity number: SC042032
 		</footer>
